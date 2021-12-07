@@ -7,6 +7,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <title>Weather Dashboard</title>
+    <style>
+      div {
+        background-image: url('data:image/jpeg;base64,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');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        background-position: center 50px;
+     
+      }
+      </style>
+    
   </head>
   <body>
 
@@ -16,7 +27,7 @@
   <!-- Navigation -->
 
   <div class="navigation">
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgba(13, 223, 238, 0.75)">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(255, 255, 255)">
       <div class="col-sm-12 col-md-2">
         <a class="navbar-brand" href="index.html">Weather Dashboard</a>
         <button class="navbar-toggler border border-black " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -54,7 +65,7 @@
 <!-- Navigation end -->
 
 <!--cloudiness content adjustments-->
-<div class="container content">
+<div class="container-fluid">
     <div class="row">
         <div class="col-md-8">
             <div class="col-md-12">

@@ -7,15 +7,18 @@ body {
   
   .navbar {
     max-height: 50px;
+    background-color: rgb(255, 255, 255);
   }
   .navigation .navbar-brand {
     color: rgb(2, 9, 10);
     margin-left: 0px;
     padding: inherit;
+    background-color: rgb(255, 255, 255);
   }
   .navbar {
     
     font-size: 25px; 
+    background-color: rgb(255, 255, 255);
   }
   .active, .dropdown-menu .dropdown-item:active a:hover {
     background-color: rgb(255,255,255);
@@ -24,19 +27,20 @@ body {
     color: rgba(3, 8, 8, 0.75);
   }
   .dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:hover {
-    background-color: rgba(13, 223, 238, 0.75);
+    background-color: rgba(149, 151, 151, 0.75);
   }
   
   .nav-link:hover {
-    background-color:rgba(13, 223, 238, 0.75);
+    background-color:rgba(149, 151, 151, 0.75);
    }
   
   .navbar-brand:hover {
-  color: rgb(22, 236, 226);
+  color: rgba(149, 151, 151, 0.75);
   }
   a {
-    color: rgb(231, 231, 231);
+    color: rgb(255, 255, 255);
     font-size: 15px;
+    background-color: rgb(255, 255, 255);
   }
 
   h3 {
@@ -51,17 +55,8 @@ body {
   .active, .panel:hover {
     border-color:rgb(7, 16, 17);
     border-style: solid;
+    background-color: rgba(13, 223, 238, 0.75);
     
-  }
-  .vizualization {
-    width:75%;
-    height:75%;
-  }
-  
-  .title {
-    color: rgb(1, 10, 12);
-    font-weight: bolder;
-    padding-top: 10px;
   }
   
   p {
@@ -70,41 +65,5 @@ body {
   font-size: 16px;
   }
   
-  .box {
-    margin-top: 50px;
-    margin-bottom: 60px;
-    padding: 10px 30px 10px;
-    color: #ffffff;
-    background-color: rgb(255, 255, 255);
-  
-  }
-  
-  .table {
-    font-size: 15px;
-    border-top-color: rgb(255, 255, 255);
-  }
   
   
-  @media(max-width: 992px) {
-    .navbar-expand-lg {
-    background-color: #000000;
-    }
-    .navbar {
-      max-height: none;
-      padding: inherit;
-    }
-    .navbar div {
-      margin: inherit;
-      background-color: rgb(255,255,255);
-    }
-    .navbar-brand {
-      padding: 10px;
-    }
-    button{
-      margin-right: 30px;
-    }
-    button:focus {
-      outline: 1px dotted;
-      outline: auto 5px;
-    }
-  }
